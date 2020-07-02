@@ -27,10 +27,10 @@ $clientDetail
 
 $version = new ComplexType\VersionId();
 $version
-    ->setMajor(21)
-    ->setIntermediate(0)
-    ->setMinor(0)
-    ->setServiceId('ship');
+->setMajor(23)
+->setIntermediate(0)
+->setMinor(0)
+->setServiceId('ship');
 
 $shipperAddress = new ComplexType\Address();
 $shipperAddress
