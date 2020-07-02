@@ -103,7 +103,7 @@ $shippingChargesPayment
 $requestedShipment = new ComplexType\RequestedShipment();
 $requestedShipment->setShipTimestamp(date('c'));
 $requestedShipment->setDropoffType(new SimpleType\DropoffType(SimpleType\DropoffType::_REGULAR_PICKUP));
-$requestedShipment->setServiceType(new SimpleType\ServiceType(SimpleType\ServiceType::_FEDEX_GROUND));
+$requestedShipment->setServiceType(new SimpleType\ServiceType(SimpleType\ServiceType::_STANDARD_OVERNIGHT));
 $requestedShipment->setPackagingType(new SimpleType\PackagingType(SimpleType\PackagingType::_YOUR_PACKAGING));
 $requestedShipment->setShipper($shipper);
 $requestedShipment->setRecipient($recipient);
