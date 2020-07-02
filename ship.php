@@ -127,5 +127,6 @@ $result = $shipService->getProcessShipmentReply($processShipmentRequest);
 
 var_dump($result);
 // Save .pdf label
-// file_put_contents('/path/to/label.pdf', $result->CompletedShipmentDetail->CompletedPackageDetails[0]->Label->Parts[0]->Image);
+$labelPath = dirname(__DIR__) . '/label.pdf';
+file_put_contents($labelPath, $result->CompletedShipmentDetail->CompletedPackageDetails[0]->Label->Parts[0]->Image);
 var_dump($result->CompletedShipmentDetail->CompletedPackageDetails[0]->Label->Parts[0]->Image);
